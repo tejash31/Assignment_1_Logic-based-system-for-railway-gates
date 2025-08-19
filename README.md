@@ -22,10 +22,13 @@ A robust, fail-safe logic controller designed to automate railway crossing gates
 - **Self-Diagnostics:** Continuous health monitoring and alerting
 
 ## 📁 Project Structure
-/designs # Logic flowcharts and truth tables
-/simulations # Test scenarios and validation code
-/hardware # Sensor and actuator specifications
-/documentation # Compliance and safety standards
+
+- Exploring the Problem
+- Exploring Alternatives
+- Evaluating Alternatives
+- Engineering Decision
+- Planning and Implementing
+- Testing and Refinement
 
 ## ⚠️ Safety Compliance
 
