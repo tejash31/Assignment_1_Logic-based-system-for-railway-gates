@@ -1,0 +1,36 @@
+**Flow chart**
+
+START
+ │
+ ▼
+[TRAIN IN 500m?] ◀──────────────────────────────┐
+ │                                             │
+ ├─NO─→ [NO TRAIN AT 200m FOR 10s?]            │
+ │       │                                     │
+ │       ├─YES─→ OPEN GATES ───────────────────┘
+ │       │
+ │       └─NO───┐
+ │              │
+ ▼              │
+[DISTANCE?] ◀─────────────────────────────────┐
+ │                                           │
+ ├─500m─→ [VEHICLE ON TRACK?]               │
+ │         │                                │
+ │         ├─YES─→ RED LIGHT (SLOW) ───────┘
+ │         │
+ │         └─NO─→ GREEN LIGHT ─────────────┐
+ │                                         │
+ ├─200m─→ [VEHICLE ON TRACK?]              │
+ │         │                              │
+ │         ├─YES─→ KEEP GATES OPEN ───────┘
+ │         │
+ │         └─NO─→ CLOSE GATES ───────────┐
+ │                                       │
+ └─50m─→ [VEHICLE ON TRACK?]            │
+           │                           │
+           ├─YES─→ EMERGENCY BRAKE ─────┘
+           │
+           └─NO─→ MAINTAIN GREEN ──────┐
+                                      │
+                                      ▼
+                                  (REPEAT)
